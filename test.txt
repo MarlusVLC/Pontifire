@@ -1,0 +1,13 @@
+Tela inicial -- Index - MARLUS
+	Cabecalho
+		
+	Menu
+	Imagem de fundo
+Catalogo de Venda/Produtos - AGATHA
+Vídeo
+Informações Socias/Sobre
+Cadastro/Login - VINICIUS
+Carrinho
+
+Pagina de Compras/Informações de Transação 
+Projeto TDE 
