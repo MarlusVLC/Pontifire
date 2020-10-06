@@ -1,3 +1,70 @@
-h1{
-    color: red;
+table.tableLogin {
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    background-color: #EEEEEE;
+    border-radius: 30PX;
+    width: 30%;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 15px;
+    font-size: 18px;
+    box-shadow: 7px 10px 6px;
+
+}
+
+.input {
+    border-color: #cccccc;
+    border-style: solid;
+    padding: 6px;
+    font-size: 14px;
+    border-width: 0px;
+    border-radius: 50px;
+    box-shadow: 3px 6px 6px 0px rgba(42, 42, 42, .82);
+    font-weight: bold;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.myButton {
+    box-shadow: 4px 6px 5px 0px #000000;
+    background-color: #bdbcbc;
+    border-radius: 42px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 31px;
+    text-decoration: none;
+}
+
+.myButton:hover {
+    background-color: #949494;
+}
+
+.myButton:focus {
+    outline: none;
+}
+
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.textos {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
 }
