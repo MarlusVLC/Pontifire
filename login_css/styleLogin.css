@@ -3,10 +3,15 @@
     padding:0;
 }
 
+.imagem{
+    opacity: 0.3;
+
+}
+
 table.tableLogin {
     position: absolute;
     left: 35%;
-    top: 30%;
+    top: 28%;
     background-color: #ffffff;
     border-radius: 30PX;
     width: 30%;
@@ -14,7 +19,7 @@ table.tableLogin {
     border-collapse: collapse;
     padding: 15px;
     font-size: 18px;
-    box-shadow: 7px 10px 6px;
+    box-shadow: 7px 10px 10px;
 
 }
 
@@ -35,7 +40,8 @@ table.tableLogin {
 
 .myButton {
     width: 70%;
-    box-shadow: 4px 6px 5px 0px #000000;
+    border: none;
+    box-shadow: 4px 6px 10px 0px #000000;
     background-color: #292929;
     border-radius: 42px;
     display: inline-block;

@@ -15,7 +15,7 @@
 
 <body>
 
-    <img src="login_img/BackgroundFogoLogo.png" width="100%" height="100%" >
+    <img class="imagem" src="login_img/BackgroundFogoLogo.png" width="100%" height="100%" >
 
     <table class="tableLogin">
         <tbody>
@@ -24,8 +24,10 @@
                 <td><br></td>
             </tr>
 
-            <tr>
-                <td> <img src="login_img/NomeFogoPreto.png" width="300"> </td>
+            <tr >
+                <td colspan="2" > <img src="login_img/NomeFogoPreto.png" width="300"> </td>
+                <td> </td>
+
             </tr>
 
             <tr>
@@ -40,7 +42,9 @@
                 <td> </td>
             </tr>
             <tr>
-                <td class="textos" > E-mail: <input class="input" type="text"></td>
+                <td class="textos" align="right"> E-mail: </td>
+                <td><input id="inpEmail" class="input" type="text"></td>
+
             </tr>
             <tr>
                 <td></td>
@@ -51,7 +55,9 @@
             </tr>
 
             <tr>
-                <td class="textos"> Senha: <input class="input" type="text"></td>
+                <td class="textos" align="right"> Senha: </td>
+                <td><input id="inpSenha" class="input" type="text"></td>
+
             </tr>
 
             <tr>
@@ -63,7 +69,8 @@
 
 
             <tr>
-                <td><button id="botao" class="mybutton">Enviar</button></td>
+                <td colspan="2"><button id="botao" class="mybutton">Enviar</button></td>
+                <td> </td>
             </tr>
             <tr>
                 <td> <br> </td>
