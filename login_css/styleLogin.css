@@ -1,19 +1,9 @@
-* {
-    margin: 0;
-    padding:0;
-}
-
-.imagem{
-    opacity: 0.3;
-
-}
-
 table.tableLogin {
     position: absolute;
     left: 35%;
     top: 22%;
     background-color: #ffffff;
-    border-radius: 30PX;
+    border-radius: 5PX;
     width: 30%;
     text-align: center;
     border-collapse: collapse;
@@ -24,15 +14,28 @@ table.tableLogin {
 
 }
 
+* {
+    margin: 0;
+    padding:0;
+}
+
+
+.imagem{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 .input {
     border-color: #cccccc;
     border-style: solid;
     padding: 6px;
     font-size: 14px;
     border-width: 0px;
-    border-radius: 50px;
-    box-shadow: 3px 6px 6px 0px rgba(42, 42, 42, .82);
-    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.82);
 }
 
 .input:focus {
@@ -43,8 +46,8 @@ table.tableLogin {
     width: 70%;
     border: none;
     box-shadow: 4px 6px 10px 0px #000000;
-    background-color: #292929;
-    border-radius: 42px;
+    background-color: #AB1616;
+    border-radius: 5px;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
@@ -56,7 +59,7 @@ table.tableLogin {
 }
 
 .myButton:hover {
-    background-color: #363636;
+    background-color: #921313;
 }
 
 .myButton:focus {
