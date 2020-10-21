@@ -49,10 +49,15 @@ body{
     float: right;
 }
 
-.iconMenu table{
-    margin-left:350px;
-    margin-top: 
+.iconMenu div{
+    margin-left:100px;
+    margin-top: 20px;
 }
+
+.iconMenu div img{
+    width: 48px;
+}
+
 
 .menuOptions{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
