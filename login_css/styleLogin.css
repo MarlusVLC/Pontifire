@@ -38,6 +38,16 @@ table.tableLogin {
     box-shadow: 3px 6px 6px 0px rgba(0, 0, 0, 0.82);
 }
 
+
+.erro{
+    box-shadow: 3px 6px 6px 0px rgb(255, 0, 0);
+
+}
+
+
+
+
+
 .input:focus {
     outline: none;
 }
@@ -73,7 +83,7 @@ table.tableLogin {
 }
 
 .textos {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Arial";
     font-size: 15px;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -81,6 +91,6 @@ table.tableLogin {
     font-weight: 700;
     text-decoration: none;
     font-style: normal;
-    font-variant: normal;
+    font-variant: bold;
     text-transform: none;
 }
