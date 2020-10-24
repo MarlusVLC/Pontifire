@@ -32,7 +32,7 @@ body{
 }
 
 .menu{
-    height: 45px;
+    height: 70px;
     background-color: #767675;
     border-top: 5px solid brown;
     border-bottom: 5px solid brown;
@@ -45,94 +45,68 @@ body{
     margin: 0px;
 }
 
-
-.menuOptions a{
-    /* background-color: goldenrod; */
-
-    background:
-        linear-gradient(
-            to bottom, #ffA800 0%, #DB3939 100%
-        );
-        background-position: 5 100%;
-        background-repeat: repeat-x;
-        background-size: 4px 4px;
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 36px;
-    /* margin-left:150px; */
-    font-weight: bolder;
-
-    text-transform: uppercase;
-    text-decoration: none;
-
-    transition: background-size .2s;
-
-    /* display: inline-block; */
-}
-
-.menuOptions a:hover{
-    background-size: 4px 50px;
-    background-clip: content-box;
-}
-
-.imgTitle{
-    /* background-color: goldenrod; */
-    width:24%;
-    height:100%;
-    /* position: absolute; */
-    margin-left: 2%;
-    /* margin-bottom:15px; */
-    /* padding-bottom:5px; */
-    float: left;
-    cursor: pointer;
-}
-
-.imgTitle img{
-    width: 267px;
-    position: absolute;
-    margin-bottom:15px;
-    padding-bottom:50px;
-    transform: translateY(-10px);
-}
-
-.aGames{
-    width: 125px;
-    position: absolute;
-    margin-top: 0%;
-    margin-left: 30%;
-    /* background-color: green; */
-    float:left;
-}
-
-.aAboutUs{
-    /* background-color: hotpink; */
-    width:30%;
-    float: right;
-}
-
 .divIcon{
     width: 20%;
     float: right;
 }
 
-.divIcon div img{
+.iconMenu div{
+    margin-left:100px;
+    margin-top: 10px;
+}
+
+.iconMenu div img{
     width: 48px;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-
-.divIcon div img:hover{
-    box-shadow: 0px 0px 30px whitesmoke;
-    cursor: pointer;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
 }
 
 
+.menuOptions a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    padding-left:150px;
+    font-weight: bolder;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    text-style
+
+    /* display: inline-block; */
+}
+
+.menuOptions a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background:#fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    /* color: red; */
+}
+
+.menuOptions a:hover:after{
+    width: 100%;
+    left: 0;
+    color: greenyellow;
+}
+
+.menuOptions a:hover{
+    color: goldenrod;
+}
+
+.imgTitle{
+    width: 267px;
+    margin-left: 15px;
+}
+
+.imgBackground{
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+}
 
 .mainbody{
     /* background-color: lightcoral; */
@@ -147,7 +121,7 @@ body{
 
 
 .painelCentral{
-    background-color: #767675;
+    background-color:#ffA800;
     /* background-image: linear-gradient(to bottom right, #AA1917, #FFA800); */
     padding: 10px;
     margin: 0 auto;
@@ -157,7 +131,7 @@ body{
     text-overflow: clip;
     border-radius: 10px;
     font-size: 22px;
-    color: #F7F76A;
+    color: #AB1616;
     border-style: solid;
     border-width: 5px;
     border-color:#73020c;
