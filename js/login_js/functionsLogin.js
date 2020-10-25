@@ -87,16 +87,17 @@ function autenticaUsuario(){
                 if(($("#inpEmail").val() == dadosDoStorage[i][1]) && ($("#inpSenha").val() == dadosDoStorage[i][2])){
                     alert("Usuario valido");
                     alert("Acessando pagina principal...");
-
+                    $("#inpSenha").removeClass("erro");
+                    $("#inpEmail").removeClass("erro");
                     //window.location.href = "../pages/principal.html";//
 
                     usuarioValido = true;
                 }
-            }
-            else
-            {
+            }else {
                 usuarioValido = true;
                 alert("USUARIO INVALIDO...");
+                $("#inpSenha").addClass("erro");
+                $("#inpEmail").addClass("erro");
             }
             i++;
         }
