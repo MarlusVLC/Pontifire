@@ -1,0 +1,248 @@
+ /* @font-face{
+     font-family: Techover;
+     src: url(../../fonts/frontpage_fonts/techover.ttf);
+ } 
+
+ @font-face{
+    font-family: Merriweather;
+    src: url(../../fonts/frontpage_fonts/Merriweather-LightItalic.ttf);
+ } */
+
+
+
+body{
+    background-color: #292929;
+    margin: 0;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 35px;
+    background-color: #292929;
+    color: #ffffff;
+    font-family: Techover;
+    font-size: larger;
+    font-stretch: expanded;
+    text-align: center;
+    margin: 0px;
+}
+
+.cabecalho img{
+    height: 100%;
+}
+
+.menu{
+    height: 45px;
+    background-color: #767675;
+    /* border-top: 5px solid brown; */
+    /* border-bottom: 5px solid brown; */
+
+}
+
+.divMain{
+    width: 80%;
+    float: left;
+    margin: 0px;
+}
+
+
+.menuOptions a{
+    /* background-color: goldenrod; */
+
+    background:
+        linear-gradient(
+            to bottom, #ffA800 0%, #DB3939 100%
+        );
+        background-position: 5 100%;
+        background-repeat: repeat-x;
+        background-size: 4px 4px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36px;
+    /* margin-left:150px; */
+    font-weight: bolder;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background-size .2s;
+
+    /* display: inline-block; */
+}
+
+.menuOptions a:hover{
+    background-size: 4px 50px;
+    background-clip: content-box;
+}
+
+.imgTitle{
+    /* background-color: goldenrod; */
+    width:24%;
+    height:100%;
+    /* position: absolute; */
+    margin-left: 2%;
+    /* margin-bottom:15px; */
+    /* padding-bottom:5px; */
+    float: left;
+    cursor: pointer;
+}
+
+.imgTitle img{
+    width: 267px;
+    position: absolute;
+    margin-bottom:15px;
+    padding-bottom:50px;
+    transform: translateY(-10px);
+}
+
+.aGames{
+    width: 125px;
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 30%;
+    /* background-color: green; */
+    float:left;
+}
+
+.aAboutUs{
+    /* background-color: hotpink; */
+    width:30%;
+    float: right;
+}
+
+.iSearch{
+    border-radius: 10px;
+    background-color: #000;
+    color: #ffffff;
+    width: 50%;
+    height: 30px;
+    margin-top: 2%;
+    float: left;
+    /* border-width: 0px; */
+    border-width: 0px solid;
+    outline:none;
+/* 
+    background-image: url('../../img/frontpage_img/Buscar.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 24px; */
+}
+
+.iSearch:focus{
+    border: 2px solid #F7F76A;
+    color: #ffffff;
+    /* background-color:#DB3939; */
+    /* padding: 0px; */
+    outline:none;
+    /* inline-size: 0px; */
+}
+
+
+.divIcon{
+    width: 20%;
+    float: right;
+}
+
+.divIcon div{
+    margin-left: 50%;
+}
+
+.divIcon div img{
+    width: 48px;
+
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.divIcon div img:hover{
+    /* box-shadow: 0px 0px 30px whitesmoke; */
+    -webkit-filter: drop-shadow(2px 2px 2px #fafafa);
+    filter: drop-shadow(5px 5px 5px #fafafa);
+    cursor: pointer;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+
+
+.mainbody{
+    /* background-color: lightcoral; */
+    height: 95%
+}
+
+
+.imgJoystick{
+    margin-left: 40%;
+    width: 250px;
+}
+
+
+.painelCentral{
+    background-color: #767675;
+    /* background-image: linear-gradient(to bottom right, #AA1917, #FFA800); */
+    padding: 10px;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    /* text-shadow: 2px 2px 4px #AB1616; */
+    text-overflow: clip;
+    border-radius: 10px;
+    font-size: 22px;
+    color: #F7F76A;
+    border-style: solid;
+    border-width: 5px;
+    /* border-color:#73020c; */
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+.bInscricao{
+    margin-left: 42%;
+    margin-top: 2%;
+    border: 5px solid#DB3939;
+    /* #FF5C5C */
+    border-radius: 20px;
+    background-color: inherit;
+    color: #ffffff;
+    /* #DB3939 */
+    padding: 14px 28px;
+    font-size: 20px;
+    /* font-style: italic; */
+    font-weight: 1000;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.bInscricao span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bInscricao span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -200px;
+    transition: 0.5s
+}
+
+.bInscricao:hover span{
+    padding-right: 25px;
+}
+
+.bInscricao:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+::selection{
+    background: brown;
+    color: #000;
+}
