@@ -129,7 +129,7 @@ body{
 }
 
 .iSearch:focus{
-    border: 2px solid #F7F76A;
+    border: 3px solid #F7F76A;
     color: #ffffff;
     /* background-color:#DB3939; */
     /* padding: 0px; */
