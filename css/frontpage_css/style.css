@@ -118,10 +118,11 @@ body{
     height: 30px;
     margin-top: 2%;
     float: left;
-    /* border-width: 0px; */
+    border-width: 0px; 
     border-width: 0px solid;
     outline:none;
 /* 
+	border: 0px;
     background-image: url('../../img/frontpage_img/Buscar.png');
     background-position: right;
     background-repeat: no-repeat;
