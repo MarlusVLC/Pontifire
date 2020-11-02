@@ -1,0 +1,146 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #292929;
+}
+
+.img {
+
+    height: 80px;
+
+}
+
+#map {
+    height: 100%;
+  }
+
+.img:hover {
+    cursor: pointer;
+    /* box-shadow: 0px 0px 30px whitesmoke; */
+    -webkit-filter: drop-shadow(2px 2px 2px #fafafa);
+    filter: drop-shadow(5px 5px 5px #fafafa);
+    
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+div.Rodape {
+    background-color: #767675;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: auto;
+}
+
+div.meio {
+    background-color: #767675;
+    position: absolute;
+    width: 100%;
+    bottom: 75%;
+    height: 4%;
+}
+
+
+div.tituloVideo {
+    position: absolute;
+    bottom: 79%;
+    height: auto;
+    left: 48%;
+
+}
+
+div.info {
+    background-color: #292929;
+    position: absolute;
+    width: 100%;
+    bottom: 17%;
+}
+
+div.mapa {
+    background-color: #ffffff;
+    position: absolute;
+    left: 48%;
+    width: 50%;
+    height: 65%;
+    bottom: 17%;
+}
+
+
+
+p.texto {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+    letter-spacing: -2.2px;
+    word-spacing: 4.8px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+
+p.texto2 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    word-spacing: 4.8px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+p.texto3 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 12px;
+    letter-spacing: -1px;
+    word-spacing: 4.8px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+
+table.redtable {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table.redtable tbody td {
+    font-size: 13px;
+}
+
+table.blueTable {
+    text-align: left;
+    bottom: 30%;
+    width: 30%;
+    margin: 3%;
+}
+
+table.blueTable td,
+table.blueTable th {
+    padding: 3px 2px;
+}
+
+table.blueTable tbody td {
+    font-size: 15px;
+}
+
+table.blueTable thead th {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
