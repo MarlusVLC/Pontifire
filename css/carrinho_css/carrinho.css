@@ -28,19 +28,21 @@ a:hover{
 .div-1{ /*div corpo da pagina*/
     background-color: #292929;
     width: 100%;    
-    height: auto;
+    height: 100%;
     float: left;
     align-items: center
 }
 
 .div-3{ /*div corpo da pagina carrinho*/
-    background-color:white;
+    background-color:#E7E7E7;
     width: 80%;    
     height: auto;
     float: left;
     align-items: center;
-    margin: 5px;
-    padding: 5px;
+    margin: 30px;
+    margin-left: 10%;
+    margin-right: 5%
+    
 }
 
 .bVerMais{
@@ -118,7 +120,6 @@ a:hover{
     width: 100%;
     text-align: center;
     font-family: arial bold;
-
 }
 
 h7{
@@ -172,4 +173,90 @@ h7{
 
 .divVermais{
     margin-left: 74%;
+}
+
+.divListaCarrinho{
+    align-items: center;
+    width: 95%;
+    height: 90px;
+    float: left;
+    margin: 25px;
+    padding: 5px;
+}
+
+.divImagemCarrinho{
+    width: 10%;
+    height: 90%;
+    float: left;
+}
+
+.divImagemCarrinho img{
+    width: 80%;
+    height: 95%;
+}
+
+.divJogosCarrinho{
+    
+    width: 50%;
+    height: 80%;
+    text-align: left;
+    font-family: arial bold;
+    margin-left: 2%;
+    float: left;
+}
+
+.divPreco{
+    
+    width: 10%;
+    height: 80%;
+    text-align: left;
+    font-family: arial bold;
+    margin-left: 2%;
+    float: left;
+    
+}
+
+.divPreco1{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color:#E7E7E7;
+}
+
+
+.divQtd{
+    
+    width: 10%;
+    height: 80%;
+    text-align: left;
+    font-family: arial bold;
+    margin-left: 2%;
+    float: left;
+    background-color:#E7E7E7;
+}
+
+.divQtd1{
+    width: 30%;
+    height: 100%;
+    float: left;
+    border: none;
+    background-color:#E7E7E7;
+}
+
+.divTotal{
+ 
+    width: 10%;
+    height: 80%;
+    text-align: left;
+    font-family: arial bold;
+    margin-left: 2%;
+    float: left;
+    background-color:#E7E7E7;
+}
+
+.divTotal1{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color:#E7E7E7;
 }
