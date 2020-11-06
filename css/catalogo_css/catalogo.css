@@ -12,12 +12,8 @@ a:hover{
     text-decoration: underline;
 }
 
-<<<<<<< HEAD
-.div-0{
-=======
 .div-0{  /* primeira div marca*/
     background-color: #292929;
->>>>>>> 65e5e77a8eb0d21508dbba843cf5507bc5a6496d
     width: 100%;    
     height: 15%;
     float: left;
@@ -30,12 +26,8 @@ a:hover{
     float: left;
 }
 
-<<<<<<< HEAD
-.div-1{
-=======
 .div-1{ /*div corpo da pagina*/
     background-color: #292929;
->>>>>>> 65e5e77a8eb0d21508dbba843cf5507bc5a6496d
     width: 100%;    
     height: auto;
     float: left;
