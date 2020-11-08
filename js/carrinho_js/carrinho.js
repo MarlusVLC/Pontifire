@@ -33,7 +33,7 @@ var bancoDadosCarrinho = window.localStorage;
          conteudo += '<div class="divPreco" >';
          conteudo += '</div>';
          conteudo += '<div class="divQtd" >';
-         conteudo += '<input  autocomplete="off" data-quantity="input" class="divQtd1" type="tel" id="bQtd" value= "' +  arrayCarrinho[i][5]  +'" readonly="readonly"> ';
+         conteudo += '<input  autocomplete="off" data-quantity="input" class="divQtd1" type="tel" id="bQtd" value= "1" readonly="readonly"> ';
          conteudo += '</div>';
          conteudo += '<div class="divTotal" >';
          conteudo += '<input class="divTotal1" type="text" id="btotal" value = "R$ ' +  arrayCarrinho[i][2]  +'"readonly="readonly"> ';
