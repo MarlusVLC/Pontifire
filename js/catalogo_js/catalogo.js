@@ -1,3 +1,4 @@
+
 var arrayJogosPopulares = [['Shurihito','img1.png',12.01,'um jogador controla um monstro que tenta destruir uma cidade japonesa enquanto os trabalhadores da cidade a reconstroem e tentam deter o monstro',false,1]
 , ['Alteria','img2.gif',15.12,'Aventura',false,1]
 ,['Ludum Dare','img3.PNG',20.75,'Gerencie seu bate-papo, mencione comentários e mantenha seus espectadores entretidos com o jogo que você está jogando!',false,1]
@@ -18,8 +19,10 @@ var arrayCarrinho = [];
 var bancoDadosCarrinho = window.localStorage;
 
 $(document).ready(function(){
-    listaJogos($(".divMaisVendidos"), arrayJogosPopulares, "botaoRodape");
+    
     listaJogos($(".divJogos"), arrayJogos, "botaoRodapeProdutos");
+    listaJogos($(".divMaisVendidos"), arrayJogosPopulares, "botaoRodape");  
+    
 
     $("#bListarCarrinho").click(function(){
         
@@ -27,6 +30,7 @@ $(document).ready(function(){
     });
     
 
+    
 });
 
 function listaJogos(idJogos, lista, bComprar){
@@ -34,7 +38,7 @@ function listaJogos(idJogos, lista, bComprar){
     $(idJogos).html("");
 
     $(".div-filmes").html("");
-    console.log(lista);
+    
     for (var i = 0; i < lista.length; i++){
       
         var conteudo = "";
@@ -62,36 +66,50 @@ function listaJogos(idJogos, lista, bComprar){
         conteudo += '</div>';
 
         idJogos.append(conteudo);
-        
-        
     }
 
-    $(".botaoRodape").click(function(){
+
+    $("." + bComprar).click(function(){
         
-		var id = $(this).attr("addCarrinho");
-	    arrayJogosPopulares[id].splice(4, 1, true);
-        arrayCarrinho.push(arrayJogosPopulares[id]);
+
+        var arrayCarrinho = JSON.parse(bancoDadosCarrinho.getItem("dadosCarrinho") || '[]');
+
+        var id = $(this).attr("addCarrinho");
+        lista[id].splice(4, 1, true);
+
+
+        var produto = false;
         
-        bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
+        if (arrayCarrinho.length < 1){
+            arrayCarrinho.push(lista[id]);
+            bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
+            listaJogos($(idJogos), lista, bComprar);
+        } else{
 
-        console.log(arrayCarrinho);
-        listaJogos($(".divMaisVendidos"), arrayJogosPopulares,"botaoRodape" );
+            for (var i = 0; i < arrayCarrinho.length; i++){
+                if (arrayCarrinho[i] == lista[id]){
+                    produto = false;
+                }else{
+                    produto = true
+                }
+                console.log("ArrayCarrinho")
+                console.log(arrayCarrinho[i]);
+                console.log("lista")
+                console.log(lista[id]);
+            }
+        }
+        console.log(arrayCarrinho[i])
 
+        if (produto == true){
+            arrayCarrinho.push(lista[id]);
+            bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
+            listaJogos($(idJogos), lista, bComprar);
         
-    });    
+        }
 
-    $(".botaoRodapeProdutos").click(function(){
-        
-		var id = $(this).attr("addCarrinho");
-	    arrayJogos[id].splice(4, 1, true);
-        arrayCarrinho.push(arrayJogos[id]);
-
-        bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
-
-        console.log(arrayCarrinho);
-        listaJogos($(".divJogos"), arrayJogos, "botaoRodapeProdutos");
     });
 
-
 }
+
+
 
