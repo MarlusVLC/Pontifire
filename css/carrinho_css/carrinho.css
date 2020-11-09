@@ -1,6 +1,8 @@
 body{
     margin: 0px;
+    margin-top: 0px;
 }
+
 
 a{
     text-decoration: none;
@@ -12,6 +14,7 @@ a:hover{
 }
 
 .div-0{  /* primeira div marca*/
+    margin-top: 0px;
     background-color: #292929;
     width: 100%;    
     height: 15%;
@@ -19,6 +22,7 @@ a:hover{
 }
 
 .div-2{ /* div linha vermelha*/
+    margin: 0px;
     background-color: #73020c;
     width: 100%;    
     height: 1%;
@@ -271,7 +275,7 @@ h7{
 
 .valorTotal{
     width: 95%;
-    height: 10%;
+    height: 20%;
     text-align: right;
     float: left;
     font-family: arial bold;
@@ -293,3 +297,169 @@ h7{
     background-color:#E7E7E7;
 
 }
+
+.divEndereço{
+    margin: 50px;
+    width: 50%;    
+    height: auto;
+    font-family: arial bold;
+    float: left;
+      
+}
+
+.formul{
+    width: 520px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #cccccc;
+    border-radius: 2px;
+    font-family: arial;
+    
+}
+
+.formul1{
+    width: 150px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #cccccc;
+    border-radius: 2px;
+    font-family: arial;
+    
+}
+
+.formul2{
+    color: -internal-light-dark(black, white);
+    width: 150px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #cccccc;
+    border-radius: 2px;
+    font-family: arial;
+    font-size: 11;
+}
+
+.formul3{
+    width: 257px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #cccccc;
+    border-radius: 2px;
+    font-family: arial;
+    
+}
+
+
+.divFinalizarCompra{
+    margin: 50px;
+    width: 35%;    
+    height: auto;
+    font-family: arial bold;
+    float: left;   
+}
+.divFormasPgto{
+    margin-left: 50px;
+    width: 50%;    
+    height: auto;
+    font-family: arial bold;
+       
+}
+
+#bCCredito{
+
+    width: 200px;
+    height: 40px;
+    font-size: 15;
+    margin-top: 20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#bBoleto{
+    width: 200px;
+    height: 40px;
+    font-size: 15;
+    margin-top: 20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imgTipoPgto{
+    margin-right: 5px;
+}
+
+#BFinalizarCompra{
+    background-color: green;
+    width: 200px;
+    height: 40px;
+    font-size: 15;
+    margin-top: 20px;
+    margin-left: 30%;
+    border: solid 1px green;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#BFinalizarCompra:hover{
+    background-color: #ffA800;
+    border: solid 1px #ffA800;
+}
+
+#bContinuar{
+    background-color: green;
+    width: 200px;
+    height: 40px;
+    font-size: 15;
+    margin-top: 20px;
+    margin-right: 40px;
+    border: solid 1px green;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#bContinuar:hover{
+    background-color: #ffA800;
+    border: solid 1px #ffA800;
+
+}
+
+.tabelaDetalhes{
+    width: 200px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 2px;
+    font-family: arial;   
+}
+
+.colunaReal{
+    width: 60px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 2px;
+    font-family: arial;  
+}
+
+.detalhesPgto{
+    margin: 25px;
+    width: 80%;
+    margin-right: 0%;    
+    height: auto;
+    font-family: arial bold;
+    font-size: 14;
+    
+}
+

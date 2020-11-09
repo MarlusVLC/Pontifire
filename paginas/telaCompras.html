@@ -7,6 +7,139 @@
 
     </head>
     <body>
+        <div class="div-0">
+
+            <img src  = "../img/catalogo_img/logo.png" width="25%" align = "left">
+
+            <img src  = "../img/catalogo_img/slogan.png" width="25%" align = "right">
+        </div>
+        <div class="div-2">
+        </div>
+        <div>
+            <div>
+
+                <div class="divEndereço">
+                    <table >
+                        <H3>ENDEREÇO DE ENTREGA</H3>
+                        <hr>
+                        <tr>
+                            <td><input  class="formul" type="text" placeholder="Rua"></td>
+                            <td><input  class="formul1" type="number" placeholder="Número"></td></tr>
+                        
+                        <tr>
+                            <td><input  class="formul" type="text" placeholder="Bairro"></td>
+                            
+                            <td><input  class="formul1"  type="text" placeholder="CEP"></td>
+                        
+                    </tr>
+                        
+                        <tr>
+                            <td><input  class="formul" type="text" placeholder="Cidade"></td>
+                            <td> <select class="formul2" name="select">
+                                <option value="">UF</option> 
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input  class="formul" type="text" placeholder="Complemento"></td>
+                            <td> <select class="formul2" name="select">
+                                <option value="" >Tipo de Endereço</option> 
+                                <option value="PR">Residencial</option> 
+                                <option value="SP">Comercial</option>
+                                
+                            </select></td>
+                        </tr>
+                    </table>
+                    
+                    
+                </div>
+
+                <div class="divFinalizarCompra" >
+                    <table align="center">
+                        <H3>TOTAL COMPRA</H3>
+                        <hr>
+                        <tr>
+                            <td> <input class="tabelaDetalhes" type="text" value="Forma de Pagamento" > </td>
+                            <td> <input class="colunaReal" type="text" value= > </td>
+                            <td> <input class="tabelaDetalhes" id="tipopgto" type="text" value="" > </td>
+                            
+                        </tr>
+
+                        <tr>
+                            <td> <input class="tabelaDetalhes" type="text" value="Desconto" > </td>
+                            <td> <input class="colunaReal" type="text" value="R$" > </td>
+                            <td > <input class="tabelaDetalhes" type="text" value="0,00" > </td>
+                        </tr>
+                        <tr>
+                            <td> <input class="tabelaDetalhes" type="text" value="Valor Frete" > </td>
+                            <td> <input class="colunaReal" type="text" value="R$" > </td>
+                            <td> <input class="tabelaDetalhes" type="text" value="0,00" > </td>
+                        </tr>
+                        <tr>
+                            <td> <input class="tabelaDetalhes" type="text" value="Total Produtos" > </td>
+                            <td> <input class="colunaReal" type="text" value="R$" > </td>
+                            <td> <input class="tabelaDetalhes" id="totalProdutos" type="text" value=" 0,00" > </td>
+                        </tr>
+                        <tr>
+                            <td> <input class="tabelaDetalhes" type="text" value="Total Compra" > </td>
+                            <td> <input class="colunaReal" type="text" value="R$" > </td>
+                            <td> <input class="tabelaDetalhes" id="totalCompra" type="number" value="R$ 0,00" > </td>
+                        </tr>
+
+                    </table>
+
+                    <button id="BFinalizarCompra">Finalizar Compra</button>
+                    
+
+                </div>
+
+            </div>
+            
+            <div class="divFormasPgto" >
+                <H3>PAGAMENTO</H3>
+                <hr>
+                <tr>
+                <table align="center">
+
+                        <td>  <button id="bCCredito" > <img  class="imgTipoPgto" src="../img/carrinho_img/cartaoCred.png" width="20" height="20"/> Cartão Crédito</button> </td>
+                        <td>  <button id="bBoleto"> <img  class="imgTipoPgto" src="../img/carrinho_img/boleto.png" width="20" height="20"/> Boleto </button> </td>
+                    </tr>
+                </table>
+
+                <div class="detalhesPgto">
+                </div>
+                                
+            </div>
+
+    </div>
+
 
     </body>
 </html>
