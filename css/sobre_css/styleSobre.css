@@ -7,14 +7,19 @@ body {
 }
 
 .img {
-
     height: 80px;
-
 }
 
-#map {
-    height: 100%;
-  }
+
+#map{
+    border-radius: 25px;
+	background-color: #ffffff;
+    position: absolute;
+    left: 48%;
+    width: 50%;
+    height: 65%;
+    bottom: 17%;
+}
 
 .img:hover {
     cursor: pointer;
@@ -87,7 +92,7 @@ p.texto {
 
 p.texto2 {
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: -0.5px;
     word-spacing: 4.8px;
     color: #FFFFFF;
@@ -100,14 +105,13 @@ p.texto2 {
 
 p.texto3 {
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: -1px;
     word-spacing: 4.8px;
     color: #FFFFFF;
     font-weight: 700;
     text-decoration: none;
     font-style: normal;
-    font-variant: small-caps;
     text-transform: capitalize;
     text-shadow: 2px 2px 5px #000000;
 }
