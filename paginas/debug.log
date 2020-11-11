@@ -1,3 +1,24 @@
-[1018/191648.096:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
-[1102/172434.778:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
-[1102/181034.350:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1108/072235.090:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1108/072235.125:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\agath\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\02e01ed9-244d-42d5-bdf4-16d91c8ae728: O sistema não pode encontrar o caminho especificado. (0x3)
+[1108/122205.646:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1108/202841.754:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/202842.617:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/203141.847:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/204329.982:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/210311.163:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/211551.601:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/212551.603:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/212551.607:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[1108/212551.610:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/212551.611:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/213051.602:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/214551.603:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/220051.611:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/221309.776:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/221551.612:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/222228.395:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/222711.930:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/222716.754:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/223051.625:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/223843.570:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1108/223851.169:ERROR:crash_report_database_win.cc(457)] unexpected header

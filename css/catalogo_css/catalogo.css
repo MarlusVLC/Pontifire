@@ -15,7 +15,7 @@ a:hover{
 .div-0{  /* primeira div marca*/
     background-color: #292929;
     width: 100%;    
-    height: 15%;
+    height: 12%;
     float: left;
 }
 
@@ -42,6 +42,13 @@ a:hover{
     align-items: center;
     margin: 5px;
     padding: 5px;
+}
+
+.div-4{  /* div img carrinho*/
+    background-color: #292929;
+    width: 100%;    
+    height: 5%;
+    float: left;
 }
 
 .bVerMais{
@@ -173,4 +180,9 @@ h7{
 
 .divVermais{
     margin-left: 74%;
+}
+
+.imgCarrinho{
+    cursor: pointer;
+    margin-right: 40px;
 }
