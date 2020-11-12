@@ -11,14 +11,26 @@ a:hover{
     text-decoration: underline;
 }
 
-.div-0{  /* primeira div marca*/
-    background-color: #292929;
+.div-0 { 
+    /* width="25%" align = "left" */
     width: 100%;    
     height: 12%;
     float: left;
 }
 
-.div-2{ /* div linha vermelha*/
+.div-0 .imgLogo{
+    width: 25%;
+    float: left;
+}
+
+.div-0 .imgSlogan{
+    width: 25%;
+    float: right;
+}
+
+
+
+.div-2{
     background-color: #73020c;
     width: 100%;    
     height: 1%;
