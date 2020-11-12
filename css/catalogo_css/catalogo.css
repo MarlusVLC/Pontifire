@@ -1,6 +1,5 @@
 body{
     margin: 0px;
-    background-color: #292929;
 }
 
 a{
@@ -12,11 +11,25 @@ a:hover{
     text-decoration: underline;
 }
 
-.div-0{
+.div-0 { 
+    /* width="25%" align = "left" */
+    background-color: #292929;
     width: 100%;    
-    height: 15%;
+    height: 12%;
     float: left;
 }
+
+.div-0 .imgLogo{
+    width: 25%;
+    float: left;
+}
+
+.div-0 .imgSlogan{
+    width: 25%;
+    float: right;
+}
+
+
 
 .div-2{
     background-color: #73020c;
@@ -25,31 +38,29 @@ a:hover{
     float: left;
 }
 
-.div-1{
+.div-1{ /*div corpo da pagina*/
+    background-color: #292929;
     width: 100%;    
     height: auto;
     float: left;
     align-items: center
 }
 
-.div-3{
-
-    width: 40%;    
-    height: 100%;
+.div-3{ /*div corpo da pagina carrinho*/
+    background-color:white;
+    width: 80%;    
+    height: auto;
     float: left;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
 }
-.div-4{
-    background-color: #819FF7;
-    width: 70%;    
-    height: 10%;
-    float: left;
-}
-.div-5{
 
-    width: 60%;    
-    height: 90%;
+.div-4{  /* div img carrinho*/
+    background-color: #292929;
+    width: 100%;    
+    height: 5%;
     float: left;
-
 }
 
 .bVerMais{
@@ -107,7 +118,7 @@ a:hover{
     margin-left: 200px;
     margin-right: 200px;
     background-color: #292929;
-    width: auto;    
+    width: 80%;    
     height: auto;
     float: left;
     
@@ -117,7 +128,7 @@ a:hover{
     margin-left: 200px;
     margin-right: 200px;
     background-color: #292929;
-    width: auto;   
+    width: 80%;    
     height: auto;
     float: left;
       
@@ -126,7 +137,7 @@ a:hover{
 .div-titulo{
     width: 100%;
     text-align: center;
-    font-family: Candara;
+    font-family: arial bold;
 
 }
 
@@ -181,4 +192,9 @@ h7{
 
 .divVermais{
     margin-left: 74%;
+}
+
+.imgCarrinho{
+    cursor: pointer;
+    margin-right: 40px;
 }

@@ -1,0 +1,465 @@
+body{
+    margin: 0px;
+    margin-top: 0px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.div-0{  /* primeira div marca*/
+    margin-top: 0px;
+    background-color: #292929;
+    width: 100%;    
+    height: 15%;
+    float: left;
+}
+
+.div-2{ /* div linha vermelha*/
+    margin: 0px;
+    background-color: #73020c;
+    width: 100%;    
+    height: 1%;
+    float: left;
+}
+
+.div-1{ /*div corpo da pagina*/
+    background-color: #292929;
+    width: 100%;    
+    height: auto;
+    float: left;
+    align-items: center
+}
+
+.div-3{ /*div corpo da pagina carrinho*/
+    background-color:#E7E7E7;
+    width: 80%;    
+    height: auto;
+    float: left;
+    align-items: center;
+    margin: 30px;
+    margin-left: 10%;
+    margin-right: 5%
+    
+}
+
+.bVerMais{
+    color:#ffA800;
+    background-color: black;
+    width: 150px;
+    height: 40px;
+    font-size: 15;
+    margin-top: 20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ .bVerMais:hover{
+    background-color:#73020c;
+}
+
+
+.bComprar{
+    color:black;
+    background-color: ffA800;
+    margin-top: 200px;
+    margin-left: 50px;
+
+    width: 150px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    border: solid 1px black;
+    border-radius: 2px;
+ }
+
+ .div-card{
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background-color:#ffA800;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+.divImagem{
+    width: 100%;
+    height: 70%;
+}
+
+.divImagem img{
+    width: 100%;
+    height: 100%;
+}
+
+.divMaisVendidos{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #292929;
+    width: 80%;    
+    height: auto;
+    float: left;
+    
+}
+
+.divJogos{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: #292929;
+    width: 80%;    
+    height: auto;
+    float: left;
+      
+}
+
+.div-titulo{
+    width: 100%;
+    text-align: center;
+    font-family: arial bold;
+}
+
+h7{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px;
+    font-weight: bold;
+    color: #ED0102;
+    font-size: 25;
+}
+.div-descricao{
+    width: 100%;
+    text-align: center;
+    font-size: 18;
+}
+
+.div-rodape{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.botaoRodape{
+    margin-top: 10px;
+    width: 50%;
+    background-color:#73020c;
+    color:white;
+    cursor: pointer;
+    border: none;
+    border-radius:5px;
+    padding: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.botaoRodapeProdutos{
+    margin-top: 10px;
+    width: 50%;
+    background-color:#73020c;
+    color:white;
+    cursor: pointer;
+    border: none;
+    border-radius:5px;
+    padding: 5px;
+    margin-left: 70px;
+    margin-right: 70px
+}
+
+.botaoComprado{
+    background-color: green;
+}
+
+.divVermais{
+    margin-left: 74%;
+}
+
+.divListaCarrinho{
+    align-items: center;
+    width: 95%;
+    height: 90px;
+    float: left;
+    margin: 25px;
+    padding: 5px;
+}
+
+.divImagemCarrinho{
+    width: 10%;
+    height: 90%;
+    float: left;
+}
+
+.divImagemCarrinho img{
+    width: 80%;
+    height: 95%;
+}
+
+.divJogosCarrinho{
+    
+    width: 50%;
+    height: 80%;
+    text-align: left;
+    font-family: arial bold;
+    margin-left: 2%;
+    float: left;
+}
+
+.divPreco{
+    
+    width: 10%;
+    height: 80%;
+    text-align: left;
+    font-family: arial bold;
+    margin-left: 2%;
+    float: left;
+    
+}
+
+.divPreco1{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color:#E7E7E7;
+}
+
+
+.divQtd{
+    
+    width: 10%;
+    height: 80%;
+    text-align: left;
+    font-family: arial bold;
+    margin-left: 2%;
+    float: left;
+    background-color:#E7E7E7;
+}
+
+.divQtd1{
+    width: 30%;
+    height: 100%;
+    float: left;
+    border: none;
+    background-color:#E7E7E7;
+}
+
+.divTotal{
+ 
+    width: 10%;
+    height: 80%;
+    text-align: left;
+    font-family: arial bold;
+    margin-left: 2%;
+    float: left;
+    background-color:#E7E7E7;
+}
+
+.divTotal1{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color:#E7E7E7;
+}
+
+.tituloCarrinho{
+    text-align: center;
+}
+
+.tituloCarrinho h2{
+    text-align: right;
+}
+
+.valorTotal{
+    width: 95%;
+    height: 20%;
+    text-align: right;
+    float: left;
+    font-family: arial bold;
+    background-color:#E7E7E7;
+    align-items: center;
+    margin: 25px;
+    padding: 5px;
+}
+
+.valorTotal input{
+    width: 100px;
+    height: 20px;
+    text-align: right;
+    font-family: arial bold ;
+    font-size: x-large;
+    font-weight: bold;
+    border: none;
+    margin-right: 24px;
+    background-color:#E7E7E7;
+
+}
+
+.divEndereço{
+    margin: 50px;
+    width: 50%;    
+    height: auto;
+    font-family: arial bold;
+    float: left;
+      
+}
+
+.formul{
+    width: 520px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #cccccc;
+    border-radius: 2px;
+    font-family: arial;
+    
+}
+
+.formul1{
+    width: 150px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #cccccc;
+    border-radius: 2px;
+    font-family: arial;
+    
+}
+
+.formul2{
+    color: -internal-light-dark(black, white);
+    width: 150px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #cccccc;
+    border-radius: 2px;
+    font-family: arial;
+    font-size: 11;
+}
+
+.formul3{
+    width: 257px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #cccccc;
+    border-radius: 2px;
+    font-family: arial;
+    
+}
+
+
+.divFinalizarCompra{
+    margin: 50px;
+    width: 35%;    
+    height: auto;
+    font-family: arial bold;
+    float: left;   
+}
+.divFormasPgto{
+    margin-left: 50px;
+    width: 50%;    
+    height: auto;
+    font-family: arial bold;
+       
+}
+
+#bCCredito{
+
+    width: 200px;
+    height: 40px;
+    font-size: 15;
+    margin-top: 20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#bBoleto{
+    width: 200px;
+    height: 40px;
+    font-size: 15;
+    margin-top: 20px;
+    border: solid 1px black;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imgTipoPgto{
+    margin-right: 5px;
+}
+
+#BFinalizarCompra{
+    background-color: green;
+    width: 200px;
+    height: 40px;
+    font-size: 15;
+    margin-top: 20px;
+    margin-left: 30%;
+    border: solid 1px green;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#BFinalizarCompra:hover{
+    background-color: #ffA800;
+    border: solid 1px #ffA800;
+}
+
+#bContinuar{
+    background-color: green;
+    width: 200px;
+    height: 40px;
+    font-size: 15;
+    margin-top: 20px;
+    margin-right: 40px;
+    border: solid 1px green;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#bContinuar:hover{
+    background-color: #ffA800;
+    border: solid 1px #ffA800;
+
+}
+
+.tabelaDetalhes{
+    width: 200px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 2px;
+    font-family: arial;   
+}
+
+.colunaReal{
+    width: 60px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    border-radius: 2px;
+    font-family: arial;  
+}
+
+.detalhesPgto{
+    margin: 25px;
+    width: 80%;
+    margin-right: 0%;    
+    height: auto;
+    font-family: arial bold;
+    font-size: 14;
+    
+}
+
