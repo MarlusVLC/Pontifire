@@ -42,14 +42,52 @@ div.Rodape {
 }
 
 div.depoimentos {
-    background-color: gray;
+    /* border: 2px solid #F7F76A;
+    background-color: gray; */
+    border-radius: 5px;
     position: absolute;
     /* margin: 0 auto; */
+    padding: 16px;
+    margin: 16px 0;
+
     width: 90%;
     height: 32%;
-    bottom:60%;
+    bottom:55%;
     left: 5%;
 }
+
+.depo{
+    border: 1px solid #F7F76A;
+    background-color: gray;
+    padding: 10px;
+    margin-left: 70%;
+}
+
+.depo::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.depo img{
+    width: 90px;
+    margin-right:20px;
+    border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+    .depo {
+        margin: auto;
+        float: auto;
+        display: block;
+    }
+}
+
+/* .depo p{
+    float: right;
+} */
+
+
 
 div.meio {
     background-color: #767675;
