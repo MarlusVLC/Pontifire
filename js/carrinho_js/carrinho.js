@@ -90,19 +90,6 @@ function finalizarCOmpra(){
         var conteudo = "";
 
 
-<<<<<<< HEAD
-      for (var i = 0; i < arrayCarrinho.length; i++){
-         var valor1 = arrayCarrinho[i][5];
-         //console.log(valor1);
-         
-         var valor1 = valor1 + 1;
-         arrayCarrinho[i].splice(5, 1, valor1);
-         $("#bQtd").val(valor1);
-         
-         var total = valor1 * arrayCarrinho[i][2];
-         console.log(total);
-         $("#btotal").val(total);
-=======
         conteudo += '<h4> <b>Tudo o que você precisa saber sobre o pagamento no boleto</b></h4>';
         conteudo += '<p><hr></p>';
         conteudo += '<p>Imprima o boleto e pague em qualquer agência bancária até a data do vencimento;</p>';
@@ -111,7 +98,6 @@ function finalizarCOmpra(){
 
          $(".detalhesPgto").append(conteudo)
         
->>>>>>> c1a5a33bb3254dcb56136042a9ec9a5a3a159af6
      }
     );
 
