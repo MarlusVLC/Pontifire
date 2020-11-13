@@ -2,30 +2,13 @@
     /* background-color: blueviolet; */
 }
 
-.divCorpo{
-    margin: 0;
+.tableVideo{
     width: 100%;
-    height: 84%;
-    /* background-color: rgb(84, 121, 30); */
-    /* padding-top: 160px; */
-    /* padding-top: 10%; */
-
-    /* border: 6px solid honeydew; */
-    /* margin-top:50px; */
-    float: left;
 }
 
-.divVideo{
-    position: relative;
-
-    max-width: 784px;
-    width: 100%;
-    height: 100%;
-    max-height: 441px;
-
-    padding-top: 200px;
-    margin: 0 auto;
-
+.video{
+    height: 500px;
+    width: 85%;
 }
 
 .divVideo iframe{

@@ -89,7 +89,7 @@ function autenticaUsuario(){
                     alert("Acessando pagina principal...");
                     $("#inpSenha").removeClass("erro");
                     $("#inpEmail").removeClass("erro");
-                    //window.location.href = "../pages/principal.html";//
+                    window.location.href = "../index.html";
 
                     usuarioValido = true;
                 }

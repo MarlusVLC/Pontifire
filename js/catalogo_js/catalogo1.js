@@ -46,7 +46,7 @@ function listaJogos(idJogos, lista, bComprar){
         
         conteudo += '<div class="div-card">';
         conteudo += '<div class="divImagem">';
-        conteudo += '<img src="img/catalogo_img/'+ lista[i][1] +  '">';
+        conteudo += '<img src="../img/catalogo_img/'+ lista[i][1] +  '">';
         conteudo += '</div>';
         conteudo += '<div class="div-titulo"><br>';
         conteudo += '<h7>' + lista[i][0] + '</h7>';
