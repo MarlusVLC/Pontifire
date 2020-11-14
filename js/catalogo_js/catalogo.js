@@ -17,6 +17,7 @@ var arrayJogos=[['DayZ Steam Key GLOBAL','img4.jpg',75.01,'Quem pode ser confiá
 
 var arrayCarrinho = [];
 var bancoDadosCarrinho = window.localStorage;
+var validaLoginStorage = window.localStorage;
 
 $(document).ready(function(){
     
@@ -71,8 +72,12 @@ function listaJogos(idJogos, lista, bComprar){
 
     $("." + bComprar).click(function(){
         
+        Storage = window.localStorage;
+        var dadosDoStorage = JSON.parse(Storage.getItem('dados'));
+        
 
         var arrayCarrinho = JSON.parse(bancoDadosCarrinho.getItem("dadosCarrinho") || '[]');
+        var validaLogin = JSON.parse(validaLoginStorage.getItem("userLogado") || '[]');
 
         var id = $(this).attr("addCarrinho");
         lista[id].splice(4, 1, true);
@@ -80,30 +85,55 @@ function listaJogos(idJogos, lista, bComprar){
 
         var produto = false;
         
-        if (arrayCarrinho.length < 1){
-            arrayCarrinho.push(lista[id]);
-            bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
-            listaJogos($(idJogos), lista, bComprar);
-        } else{
+        var emailLogin = String($("#valor1").val());
+        console.log(emailLogin);
+        
 
-            for (var i = 0; i < arrayCarrinho.length; i++){
-                
-                    
-                if (arrayCarrinho[i][0] == lista[id][0]){
-                    produto = false;
-                    alert("Produto Já add ao carrinho")
-                    break
+        userCadastrado = false;
+
+        if(dadosDoStorage.length != null){
+            for (var i = 0; i < dadosDoStorage.length; i++){
+                if(validaLogin[0] == dadosDoStorage[i][1]){
+                    userCadastrado = true;
                 }else{
-                    produto = true
-                }
-            }}
-        
-        if (produto == true){
-            arrayCarrinho.push(lista[id]);
-            bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
-            listaJogos($(idJogos), lista, bComprar);
-        
+                    userCadastrado = false;
+                    }
+
+                    console.log(dadosDoStorage[i][1]);
+                    console.log(validaLogin[0]);
+            }
+            alert(userCadastrado)
         }
+
+        if (userCadastrado == true){
+            if (arrayCarrinho.length < 1){
+                arrayCarrinho.push(lista[id]);
+                bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
+                listaJogos($(idJogos), lista, bComprar);
+            } else{
+
+                for (var i = 0; i < arrayCarrinho.length; i++){
+                    
+                        
+                    if (arrayCarrinho[i][0] == lista[id][0]){
+                        produto = false;
+                        alert("Produto Já add ao carrinho")
+                        break
+                    }else{
+                        produto = true
+                    }
+                }}
+            
+            if (produto == true){
+                arrayCarrinho.push(lista[id]);
+                bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
+                listaJogos($(idJogos), lista, bComprar);
+            
+            }
+        }else{
+            alert("Por favor, Cadastre-se")
+        }
+    
 
     });
 

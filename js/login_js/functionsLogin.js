@@ -76,6 +76,9 @@ function autenticaUsuario(){
     Storage = window.localStorage;
     var dadosDoStorage = JSON.parse(Storage.getItem('dados'));
 
+    var validaLogin = [];
+    var validaLoginStorage = window.localStorage;
+
     $("#botaoEntrar").click(function(){
 
         var i = 0;
@@ -90,6 +93,9 @@ function autenticaUsuario(){
                     $("#inpSenha").removeClass("erro");
                     $("#inpEmail").removeClass("erro");
                     //window.location.href = "../pages/principal.html";//
+
+                    validaLogin.push($("#inpEmail").val());
+                    validaLoginStorage.setItem("userLogado",JSON.stringify(validaLogin));
 
                     usuarioValido = true;
                 }

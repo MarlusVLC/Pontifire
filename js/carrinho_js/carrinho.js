@@ -111,12 +111,11 @@ function excluirCarrinho(){
     
     var arrayCarrinho = JSON.parse(bancoDadosCarrinho.getItem("dadosCarrinho"));
     
-    $("#detelarCarrinho").click(function(){
+    $(".detelarCarrinho").click(function(){
+        alert("roi")
         
-        localStorage.clear()
-        while (arrayCarrinho.length > 0){
-            
-        }
+        localStorage.removeItem("dadosCarrinho");
+        
 
     });
 
