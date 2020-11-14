@@ -23,11 +23,17 @@ $(document).ready(function(){
     
     listaJogos($(".divJogos"), arrayJogos, "botaoRodapeProdutos");
     listaJogos($(".divMaisVendidos"), arrayJogosPopulares, "botaoRodape");  
-    
+    mostrarLogado();
+    fazerLogof()
 
     $("#bListarCarrinho").click(function(){
         
         window.location.href = "../paginas/carrinho.html";
+    });
+
+    $("#login").click(function(){
+        
+        window.location.href = "../paginas/login.html";
     });
     
 
@@ -91,18 +97,19 @@ function listaJogos(idJogos, lista, bComprar){
 
         userCadastrado = false;
 
-        if(dadosDoStorage.length != null){
+        if(dadosDoStorage != undefined){
             for (var i = 0; i < dadosDoStorage.length; i++){
-                if(validaLogin[0] == dadosDoStorage[i][1]){
-                    userCadastrado = true;
-                }else{
-                    userCadastrado = false;
-                    }
+                for (var j = 0; j < validaLogin.length; j++){
+                    if(validaLogin[j][0] == dadosDoStorage[i][1]){
+                        userCadastrado = false;
+                    }else{
+                        userCadastrado = true;
+                        }
+                        console.log("login " + validaLogin[0]);
+                        console.log("cadastro " + dadosDoStorage[i][1]);                    
+            }}
+            
 
-                    console.log(dadosDoStorage[i][1]);
-                    console.log(validaLogin[0]);
-            }
-            alert(userCadastrado)
         }
 
         if (userCadastrado == true){
@@ -117,7 +124,7 @@ function listaJogos(idJogos, lista, bComprar){
                         
                     if (arrayCarrinho[i][0] == lista[id][0]){
                         produto = false;
-                        alert("Produto Já add ao carrinho")
+                        alert("Produto Ja add ao carrinho")
                         break
                     }else{
                         produto = true
@@ -137,6 +144,56 @@ function listaJogos(idJogos, lista, bComprar){
 
     });
 
+}
+
+function fazerLogof(){
+
+    var validaLogin = JSON.parse(validaLoginStorage.getItem("userLogado") || '[]');
+    $(".logof").click(function(){
+        localStorage.removeItem("userLogado");
+        window.location.href = "../paginas/catalogo1.html";
+        
+    });
+}
+
+function mostrarLogado(){
+
+    var validaLogin = JSON.parse(validaLoginStorage.getItem("userLogado") || '[]');
+    if (validaLogin [0] != undefined){
+
+        var login = String(validaLogin[0]);
+        ($("#login")).val(login);
+        
+        
+        
+        var conteudo = ""
+
+        conteudo += '<table align="right" class="tabelaLogin">';
+        conteudo += '<tr>';
+        conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="../img/carrinho_img/Carrinho.png" width="35" height="35"> </td>';
+        conteudo += '<td><input class="formul3" type="text" id="login" placeholder="teste" value = "' +login + '" ></td>';
+        conteudo += '<td>  <img  id="logof" class="logof" src="../img/login_img/sair1.png" width="35" height="35"></td>';
+        conteudo += '</tr>';
+        conteudo += '</table>';
+
+
+        ($(".div-7")).append(conteudo);
+
+    }else{
+        
+        
+        var conteudo = ""
+
+        conteudo += '<table align="right" class="tabelaLogin">';
+        conteudo += '<tr>';
+        conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="../img/carrinho_img/Carrinho.png" width="35" height="35"> </td>';
+        conteudo += '<td>  <img  id="login" class="login" src="../img/login_img/login.png" width="35" height="35"></td>';
+        conteudo += '</tr>';
+        conteudo += '</table>';
+
+
+        ($(".div-7")).append(conteudo);
+    }
 }
 
 

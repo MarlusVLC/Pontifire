@@ -1,5 +1,6 @@
 
 var bancoDadosCarrinho = window.localStorage;
+var validaLoginStorage = window.localStorage;
 var somaTotal = 0;
 
  $(document).ready(function(){
@@ -16,39 +17,44 @@ var somaTotal = 0;
 
     $("#tabelaCarrinho").html("");
     var soma = 0;
-    for (var i = 0; i < arrayCarrinho.length; i++){
+    if(arrayCarrinho != undefined){
+        for (var i = 0; i < arrayCarrinho.length; i++){
 
-        var conteudo = "";
+            var conteudo = "";
 
-         conteudo += '<div class="divListaCarrinho">';
-         conteudo += '<hr/><hr/>';
-         conteudo += '<div class="divImagemCarrinho">';
-         conteudo += '<img src="../img/catalogo_img/'+ arrayCarrinho[i][1] +  '">';
-         conteudo += '</div>';
-         conteudo += '<div class="divJogosCarrinho">';
-         conteudo += '<h3>' + arrayCarrinho[i][0] + '</h3>';
-         conteudo += '</div>';
-         conteudo += '<div class="divPreco" >';
-         conteudo += '</div>';
-         conteudo += '<div class="divQtd" >';
-         conteudo += '<input  autocomplete="off" data-quantity="input" class="divQtd1" type="tel" id="bQtd" value= "1" readonly="readonly"> ';
-         conteudo += '</div>';
-         conteudo += '<div class="divTotal" >';
-         conteudo += '<input class="divTotal1" type="text" id="btotal" value = "R$ ' +  arrayCarrinho[i][2]  +'"readonly="readonly"> ';
-         conteudo += '</div>';
-         conteudo += '</div>';
+            conteudo += '<div class="divListaCarrinho">';
+            conteudo += '<hr/><hr/>';
+            conteudo += '<div class="divImagemCarrinho">';
+            conteudo += '<img src="../img/catalogo_img/'+ arrayCarrinho[i][1] +  '">';
+            conteudo += '</div>';
+            conteudo += '<div class="divJogosCarrinho">';
+            conteudo += '<h3>' + arrayCarrinho[i][0] + '</h3>';
+            conteudo += '</div>';
+            conteudo += '<div class="divPreco" >';
+            conteudo += '</div>';
+            conteudo += '<div class="divQtd" >';
+            conteudo += '<input  autocomplete="off" data-quantity="input" class="divQtd1" type="tel" id="bQtd" value= "1" readonly="readonly"> ';
+            conteudo += '</div>';
+            conteudo += '<div class="divTotal" >';
+            conteudo += '<input class="divTotal1" type="text" id="btotal" value = "R$ ' +  arrayCarrinho[i][2]  +'"readonly="readonly"> ';
+            conteudo += '</div>';
+            conteudo += '</div>';
 
-        $("#tabelaCarrinho").append(conteudo)
+            $("#tabelaCarrinho").append(conteudo)
 
-        soma +=  arrayCarrinho[i][2];
-        $("#totalProdutos").val(soma.toFixed(2));          
-        $("#totalCompra").val(soma.toFixed(2));
-        $("#valorTotal").val(soma.toFixed(2));        
-        
-        
-        $("#parcela1").val(soma.toFixed(2)); 
-     }
-    somaTotal = soma;      
+            soma +=  arrayCarrinho[i][2];
+            $("#totalProdutos").val(soma.toFixed(2));          
+            $("#totalCompra").val(soma.toFixed(2));
+            $("#valorTotal").val(soma.toFixed(2));        
+            
+            
+            $("#parcela1").val(soma.toFixed(2)); 
+         }
+        somaTotal = soma;  
+
+        }
+
+    
      
      
  }
@@ -111,11 +117,11 @@ function excluirCarrinho(){
     
     var arrayCarrinho = JSON.parse(bancoDadosCarrinho.getItem("dadosCarrinho"));
     
+    
     $(".detelarCarrinho").click(function(){
-        alert("roi")
         
         localStorage.removeItem("dadosCarrinho");
-        
+           
 
     });
 

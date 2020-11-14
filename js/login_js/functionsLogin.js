@@ -86,22 +86,22 @@ function autenticaUsuario(){
 
         while (usuarioValido == false) {
 
-            if(dadosDoStorage[i] != undefined){
+            if(dadosDoStorage != undefined){
                 if(($("#inpEmail").val() == dadosDoStorage[i][1]) && ($("#inpSenha").val() == dadosDoStorage[i][2])){
-                    alert("Usuario valido");
-                    alert("Acessando pagina principal...");
                     $("#inpSenha").removeClass("erro");
                     $("#inpEmail").removeClass("erro");
-                    //window.location.href = "../pages/principal.html";//
+                    window.location.href = "../index.html";
 
-                    validaLogin.push($("#inpEmail").val());
-                    validaLoginStorage.setItem("userLogado",JSON.stringify(validaLogin));
-
+                    if (($("#inpEmail").val()) != validaLogin[0]){
+                        validaLogin.push($("#inpEmail").val());
+                        validaLogin.push(i);
+                        validaLoginStorage.setItem("userLogado",JSON.stringify(validaLogin));
+                    }
                     usuarioValido = true;
                 }
             }else {
                 usuarioValido = true;
-                alert("USUARIO INVALIDO...");
+                alert("USUARIO OU SENHA INVALIDO...");
                 $("#inpSenha").addClass("erro");
                 $("#inpEmail").addClass("erro");
             }

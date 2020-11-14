@@ -56,11 +56,34 @@ a:hover{
     padding: 5px;
 }
 
-.div-4{  /* div img carrinho*/
+.div-4{  /* div login*/
+    background-color: #292929;
+    width: 20%;    
+    height: 5%;
+    float: left;
+}
+.div-5{  /* div img login*/
+    background-color: #292929;
+    width: 5%;    
+    height: 5%;
+    float: left;
+}
+
+.div-6{  /* div img carrinho*/
+    background-color: #292929;
+    width: 5%;    
+    height: 5%;
+    float: left;
+}
+.div-7{  /* div img carrinho*/
     background-color: #292929;
     width: 100%;    
     height: 5%;
     float: left;
+}
+.div-8{
+    background-color: #292929;
+    width: 100%;
 }
 
 .bVerMais{
@@ -197,4 +220,26 @@ h7{
 .imgCarrinho{
     cursor: pointer;
     margin-right: 40px;
+}
+
+   .formul3{
+    width: 200px;
+    height: 30px;
+    border: solid 1px #292929;
+    background-color: #292929;
+    color: blanchedalmond;
+    text-align: left;
+    font-size: medium;
+   }
+
+.tabelaLogin{
+    padding: 0px;
+    margin: 0px;
+}
+
+#logof{
+    cursor: pointer;
+}
+#login{
+    cursor: pointer;
 }
