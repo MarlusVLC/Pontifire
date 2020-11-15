@@ -1,17 +1,12 @@
-.divCabecalho{
-    /* background-color: blueviolet; */
+body{
+    background-color: #292929;
+
 }
 
 .divCorpo{
     margin: 0;
     width: 100%;
     height: 84%;
-    /* background-color: rgb(84, 121, 30); */
-    /* padding-top: 160px; */
-    /* padding-top: 10%; */
-
-    /* border: 6px solid honeydew; */
-    /* margin-top:50px; */
     float: left;
 }
 
