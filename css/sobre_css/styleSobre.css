@@ -44,7 +44,6 @@ div.Rodape {
 div.depoimentos {
     /* border: 2px solid #F7F76A;
     background-color: gray; */
-    border-radius: 5px;
     position: absolute;
     /* margin: 0 auto; */
     padding: 16px;
@@ -52,26 +51,87 @@ div.depoimentos {
 
     width: 90%;
     height: 32%;
-    bottom:55%;
+    bottom: 62%;
     left: 5%;
 }
 
-.depo{
-    border: 1px solid #F7F76A;
-    background-color: gray;
-    padding: 10px;
-    margin-left: 70%;
+/* div.depoimentos table{
+    border-spacing: 30px;
+} */
+
+/* div.depoimentos table tbody tr td:nth-child(1) div{
+    TODO: ALTERNAR O MARGIN-TOP ou BOTTOM A CADA TD
+} */
+
+.hDepoTitulo{
+    align-self: center;
+    color: #fff;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-style: normal;
+    text-decoration: underline;
+    text-underline-position: below;
+    font-variant: small-caps;
+    text-shadow: 2px 2px 5px #000000;    
 }
+
+.depo{
+    /* margin-right: 200px; */
+    width: 350px;
+    border: 1px solid #F7F76A;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* padding: 10px; */
+    /* margin-left: 70%; */
+}
+
+.depo p span{
+    /* TODO: ADICIONAR ANIMAÇÃO, COMO AS DOS ÍCONES*/
+    padding: 0;
+    margin-left: 110px;
+    font-size: 24px;
+    text-decoration: underline;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.depo p span:hover{
+    text-shadow: 5px 2px 1px #767675;
+}
+
+.depo .pProjects{
+    font-size:12px;
+    margin-top: -15px;
+    margin-left:130px;
+}
+
+.depo .pText{
+    text-align: center;
+    /* margin-left: 20px; */
+    /* text-indent: 20%; */
+
+    font-style: oblique;
+}
+
+
 
 .depo::after{
     content: "";
     clear: both;
-    display: table;
+    /* display: table; */
 }
 
 .depo img{
+    position: absolute;
     width: 90px;
-    margin-right:20px;
+    /* object-position: 10px 10%; */
+    margin-left:10px;
+    margin-top:-20px;
     border-radius: 50%;
 }
 
@@ -110,7 +170,7 @@ div.info {
     background-color: #292929;
     position: absolute;
     width: 100%;
-    bottom: 17%;
+    bottom: 11%;
 }
 
 div.mapa {
@@ -184,7 +244,7 @@ table.blueTable {
 
 table.blueTable td,
 table.blueTable th {
-    padding: 3px 2px;
+    padding: 1px 2px;
 }
 
 table.blueTable tbody td {
