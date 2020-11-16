@@ -23,8 +23,9 @@ $(document).ready(function(){
     
     listaJogos($(".divJogos"), arrayJogos, "botaoRodapeProdutos");
     listaJogos($(".divMaisVendidos"), arrayJogosPopulares, "botaoRodape");  
-    mostrarLogado($(".tableIcon"), "img");
-    mostrarLogado($(".tableIcon1"),"../img");
+    mostrarLogado();
+
+    
     fazerLogof()
 
     $("#bListarCarrinho").click(function(){
@@ -162,7 +163,9 @@ function fazerLogof(){
     });
 }
 
-function mostrarLogado(classeTabela, img){
+
+
+function mostrarLogado(){
 
     var validaLogin = JSON.parse(validaLoginStorage.getItem("userLogado") || '[]');
     if (validaLogin [0] != undefined){
@@ -176,15 +179,15 @@ function mostrarLogado(classeTabela, img){
 
        
         conteudo += '<tr>';
-        conteudo += '<td> <img id="iconBusca" src="'+ img + '/Buscar.png" width="35" height="35"> </td>';
-        conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="'+ img + '/Carrinho.png" width="35" height="35"> </td>';
+        conteudo += '<td> <img id="iconBusca" src="img/Buscar.png" width="35" height="35"> </td>';
+        conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="img/Carrinho.png" width="35" height="35"> </td>';
         conteudo += '<td><input class="formul3" type="text" id="nomeLogin" placeholder="teste" value = "' +login + '" ></td>';
-        conteudo += '<td>  <img  id="logof" class="logof" src="'+ img + '/sair1.png" width="35" height="35"></td>';
+        conteudo += '<td>  <img  id="logof" class="logof" src="img/sair1.png" width="35" height="35"></td>';
         conteudo += '</tr>';
        
 
 
-        (classeTabela).append(conteudo);
+        ($(".tableIcon")).append(conteudo);
 
     }else{
         
@@ -200,7 +203,7 @@ function mostrarLogado(classeTabela, img){
        
 
 
-        (classeTabela).append(conteudo);
+        ($(".tableIcon")).append(conteudo);
     }
 }
 

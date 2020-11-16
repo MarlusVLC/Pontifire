@@ -29,9 +29,17 @@ body{
     
 }
 
+.tableCabecalho1{
+    height: 14%;
+    width: 80%; 
+    background-color: #767675;
+    
+    float: left;
+}
+
 .tableIcon1{
     height: 14%;
-    width: 30%; 
+    width: 20%; 
     background-color: #767675;
     
 }
