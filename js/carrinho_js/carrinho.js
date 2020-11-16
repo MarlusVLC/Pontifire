@@ -74,10 +74,10 @@ function finalizarCOmpra(){
         conteudo += '<tr ><td colspan="2"><input  class="formul" type="number" placeholder="Número do Cartão"></td></tr>';
         conteudo += '<tr><td colspan="2"><input  class="formul" type="text" placeholder="Nome no Cartão"></td></tr>';
         conteudo += '<tr><td colspan="2"><input  class="formul" type="text" placeholder="CPF do Títular do Cartão"></td></tr>';
-        conteudo += '<tr><td><input  class="formul3" type="text" placeholder="Mês Validade"></td>';
-        conteudo += '<td><input  class="formul3" type="text" placeholder="Ano"></td></tr>';
-        conteudo += '<tr><td><input  class="formul3" type="text" placeholder="CVV"></td>';
-        conteudo += '<td> <select class="formul3 parcelamento" name="select">';
+        conteudo += '<tr><td><input  class="formul4" type="text" placeholder="Mês Validade"></td>';
+        conteudo += '<td><input  class="formul4" type="text" placeholder="Ano"></td></tr>';
+        conteudo += '<tr><td><input  class="formul4" type="text" placeholder="CVV"></td>';
+        conteudo += '<td> <select class="formul4 parcelamento" name="select">';
         conteudo += '<option value="" >Parcelamento</option> ';
         conteudo += '<option id="parcela1" value="" > 1 X R$ ' + parcela1 +' </option> ';
         conteudo += '<option id="parcela2" value=""> 2 X R$ ' + parcela2 +' </option> ';

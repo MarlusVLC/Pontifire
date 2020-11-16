@@ -44,15 +44,14 @@ a:hover{
     margin-top: 10%;
 }
 
-.div-3{ /*div corpo da pagina carrinho*/
-    background-color:white;
-    width: 80%;    
+.div-9{ /*div corpo da pagina*/
+    width: 100%;    
     height: auto;
-    float: left;
+    float: right;
     align-items: center;
-    margin: 5px;
-    padding: 5px;
+    
 }
+
 
 .div-4{  /* div img carrinho*/
     width: 100%;    
@@ -60,7 +59,8 @@ a:hover{
     float: left;
 }
 .div-8{
-    background-color: #292929;
+    background-color: #767675;
+    height: 40px;
     width: 100%;
 }
 
@@ -147,7 +147,18 @@ h7{
     font-weight: bold;
     color: #ED0102;
     font-size: 25;
+    text-align: center;
 }
+
+h8{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: white;
+    font-size: 25;
+    text-align: center;
+}
+
 .div-descricao{
     width: 100%;
     text-align: center;
@@ -195,14 +206,14 @@ h7{
 
 .imgCarrinho{
     cursor: pointer;
-    margin-right: 40px;
+    
 }
 
    .formul3{
-    width: 200px;
+    width: 130px;
     height: 30px;
-    border: solid 1px #292929;
-    background-color: #292929;
+    border: solid 1px #767675;
+    background-color: #767675;
     color: blanchedalmond;
     text-align: left;
     font-size: medium;
@@ -215,7 +226,22 @@ h7{
 
 #logof{
     cursor: pointer;
+    margin-top: 20px;
 }
 #login{
     cursor: pointer;
+    margin-top: 20px;
 }
+
+#iconBusca{
+    margin-top: 20px;
+}
+
+#bListarCarrinho{
+    margin-top: 20px;
+}
+
+#nomeLogin{
+    margin-top: 20px;
+}
+

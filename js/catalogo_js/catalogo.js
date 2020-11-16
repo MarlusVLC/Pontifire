@@ -23,17 +23,23 @@ $(document).ready(function(){
     
     listaJogos($(".divJogos"), arrayJogos, "botaoRodapeProdutos");
     listaJogos($(".divMaisVendidos"), arrayJogosPopulares, "botaoRodape");  
-    mostrarLogado();
+    mostrarLogado($(".tableIcon"), "img");
+    mostrarLogado($(".tableIcon1"),"../img");
     fazerLogof()
 
     $("#bListarCarrinho").click(function(){
         
-        window.location.href = "../paginas/carrinho.html";
+        window.location.href = "../pontifire/paginas/carrinho.html";
     });
 
     $("#login").click(function(){
         
-        window.location.href = "../paginas/login.html";
+        window.location.href = "../pontifire/paginas/login.html";
+    });
+
+    $("#logof").click(function(){
+        
+        window.location.href = "../pontifire/index.html";
     });
     
 
@@ -156,7 +162,7 @@ function fazerLogof(){
     });
 }
 
-function mostrarLogado(){
+function mostrarLogado(classeTabela, img){
 
     var validaLogin = JSON.parse(validaLoginStorage.getItem("userLogado") || '[]');
     if (validaLogin [0] != undefined){
@@ -168,31 +174,33 @@ function mostrarLogado(){
         
         var conteudo = ""
 
-        conteudo += '<table align="right" class="tabelaLogin">';
+       
         conteudo += '<tr>';
-        conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="../img/carrinho_img/Carrinho.png" width="35" height="35"> </td>';
-        conteudo += '<td><input class="formul3" type="text" id="login" placeholder="teste" value = "' +login + '" ></td>';
-        conteudo += '<td>  <img  id="logof" class="logof" src="../img/login_img/sair1.png" width="35" height="35"></td>';
+        conteudo += '<td> <img id="iconBusca" src="'+ img + '/Buscar.png" width="35" height="35"> </td>';
+        conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="'+ img + '/Carrinho.png" width="35" height="35"> </td>';
+        conteudo += '<td><input class="formul3" type="text" id="nomeLogin" placeholder="teste" value = "' +login + '" ></td>';
+        conteudo += '<td>  <img  id="logof" class="logof" src="'+ img + '/sair1.png" width="35" height="35"></td>';
         conteudo += '</tr>';
-        conteudo += '</table>';
+       
 
 
-        ($(".div-7")).append(conteudo);
+        (classeTabela).append(conteudo);
 
     }else{
         
         
         var conteudo = ""
 
-        conteudo += '<table align="right" class="tabelaLogin">';
+       
         conteudo += '<tr>';
-        conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="../img/carrinho_img/Carrinho.png" width="35" height="35"> </td>';
-        conteudo += '<td>  <img  id="login" class="login" src="../img/login_img/login.png" width="35" height="35"></td>';
+        conteudo += '<td> <img id="iconBusca" src="img/Buscar.png" width="35" height="35"> </td>';
+        conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="img/Carrinho.png" width="35" height="35"> </td>';
+        conteudo += '<td>  <img  id="login" class="login" src="img/login.png" width="35" height="35"></td>';
         conteudo += '</tr>';
-        conteudo += '</table>';
+       
 
 
-        ($(".div-7")).append(conteudo);
+        (classeTabela).append(conteudo);
     }
 }
 
