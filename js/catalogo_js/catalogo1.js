@@ -91,7 +91,7 @@ function listaJogos(idJogos, lista, bComprar){
                     
                 if (arrayCarrinho[i][0] == lista[id][0]){
                     produto = false;
-                    alert("Produto Já add ao carrinho")
+                    alert("Produto Ja add ao carrinho")
                     break
                 }else{
                     produto = true
