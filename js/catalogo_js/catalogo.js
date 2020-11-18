@@ -181,9 +181,10 @@ function mostrarLogado(){
 
        
         conteudo += '<tr>';
-        conteudo += '<td> <img id="iconBusca" src="img/Buscar.png" width="35" height="35"> </td>';
-        conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="img/Carrinho.png" width="35" height="35"> </td>';
-        conteudo += '<td style="width:120px" ><input class="formul3" type="text" id="nomeLogin" placeholder="teste" value = "' +login + '" ></td>';
+        // conteudo += '<td> <img id="iconBusca" src="img/Buscar.png" width="35" height="35"> </td>';
+        // conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="img/Carrinho.png" width="35" height="35"> </td>';
+        // conteudo += '<td style="width:120px" ><input class="formul3" type="text" id="nomeLogin" placeholder="teste" value = "' +login + '" ></td>';
+        conteudo += '<td style="width:120px" ><p class="formul3" id="nomeLogin">  ' +login + ' </p></td>';
         conteudo += '<td>  <img  id="logof" class="logof" src="img/sair1.png" width="35" height="35"></td>';
         conteudo += '</tr>';
        
@@ -198,9 +199,9 @@ function mostrarLogado(){
 
        
         conteudo += '<tr>';
-        conteudo += '<td> <img id="iconBusca" src="img/Buscar.png" width="35" height="35"> </td>';
-        conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="img/Carrinho.png" width="35" height="35"> </td>';
-        conteudo += '<td>  <img  id="login" class="login" src="img/login.png" width="35" height="35"></td>';
+        // conteudo += '<td> <img id="iconBusca" src="img/Buscar.png" width="35" height="35"> </td>';
+        // conteudo += '<td> <img  id="bListarCarrinho" class="imgCarrinho" src="img/Carrinho.png" width="35" height="35"> </td>';
+        // conteudo += '<td>  <img  id="login" class=x"login" src="img/login.png" width="35" height="35"></td>';
         conteudo += '</tr>';
        
 
