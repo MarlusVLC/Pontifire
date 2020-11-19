@@ -5,9 +5,13 @@
     <link rel="icon" href="img/frontpage_img/Logo_Joystick.png" type="image/icon type">
     <link rel="stylesheet" href="css/frontpage_css/style.css">
     <link rel="stylesheet" type="text/css" href="css/catalogo_css/catalogo.css" />
-    <script type="text/javascript" src="js/catalogo_js/jquery.js"></script>
-    <script type="text/javascript" src="js/catalogo_js/catalogo.js"></script>
     <link rel="stylesheet" type="text/css" href="css/video_css/videoStyle.css" />
+    <link rel="stylesheet" type="text/css" href="css/sobre_css/styleSobre.css" />
+    <script type="text/javascript" src="js/catalogo_js/jquery.js"></script>
+    <script type="text/javascript" src="js/frontpage_js/frontFunctions.js"></script> 
+    <script type="text/javascript" src="js/catalogo_js/catalogo.js"></script>
+    <script type="text/javascript" src="js/sobre_js/functionsSobre.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAN57mkO88IXlQikM9Gp6zA2txiHgxMtJY&callback=initMap" async defer ></script>
 </head>
 
 <body>
@@ -25,20 +29,20 @@
             <tr>
                 <td align="left">
                    
-                    <a href="#"><img class="imgTitle" src="img/frontpage_img/Titulo.png"></a>
+                    <img class="imgTitle" src="img/frontpage_img/Titulo.png">
                    
                    
                 </td>
                 <td align="left">
                     <div class="menuOptions aGames">
-                        <a href="paginas/catalogo1.html" class="menuOptions aGames">GAMES</a>
+                        <a>GAMES</a>
                     </div>
 
                 </td>
                 <td align="left">
 
                     <div class="menuOptions aAboutUs">
-                        <a href="paginas/video.html">SOBRE</a>
+                        <a>SOBRE</a>
                     </div>
 
                 </td>
@@ -115,7 +119,7 @@
 
     <div class="div-9">
         <div style='text-align:center'> 
-            <h8> Jogos Populares</h8>
+            <h8 id="tituloCatalogo"> Jogos Populares</h8>
         </div>
         <br><br>
         <div class="divMaisVendidos">
@@ -126,23 +130,128 @@
             <a href="paginas/catalogo1.html"><button class="bVerMais">Ver Mais</button></a>
         </div>
         
-        <div style='text-align:center'> 
-            <h8> Conheça os Jogos</h8>
+        <div id="tituloVideo"   > 
+            <h8 > Conheça os Jogos</h8>
         </div>
         
-        <table align="center" class="tableVideo" >
+        <table align="center" class="tableVideo">
             <tr>
                 <td align="center" > 
-                    <div class="painelCentral2">
+                    <div class="painelCentral2" id="divVideo">
                     <iframe class="video" src="https://www.youtube.com/embed/Z32dNz4hOnE?controls=0" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-        </div>
-        </td>
+                    </div>
+                 </td>
             </tr>
         </table>
 
 
 
+        <div class="divSobreNos">
+
+            <div class="Rodape">
+
+            
+
+                <table class="redtable">
+                    <tbody>
+                    <tr>
+                    <td><p class="texto"> &nbsp Pontifire também está nas redes sociais: </p></td>
+                    <td><img class="img" src="img/sobre_img/facebookIcon.png"></td>
+                    <td><img class="img" src="img/sobre_img/instagramIcon.png"></td>
+                    <td><img class="img" src="img/sobre_img/twitterIcon.png"></td>
+                    <td><img class="img" src="img/sobre_img/linkedinIcon.png"></td>
+                    <td><img class="img" src="img/sobre_img/youtubeIcon.png"></td>
+                    <td><img class="img" src="img/sobre_img/whatsappIcon.png"></td>
+                    </tr>
+                    </tbody>
+                    </table>
+    
+    
+        </div>
+    
+        <!-- <div class="meio">
+                
+    
+        </div> -->
+    
+        <div class="depoimentos">
+    
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4" class="hDepoTitulo"><h1> O que dizem nossos clientes: </h1>  </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="depo">
+                                    <img src="img/sobre_img/@PlaayL.jpg" alt="Avatar">
+                                    <p><span  id="depoPlaayL">@PlaayL</span></p>  
+                                    <p class="pProjects">Alteria - Finalista em "Melhor Jogo de Estudantes - SBGames 2020 e Spherio</p>
+                                    <p class="pText">"A plataforma mais segura e acolhedora que há"</p>
+                            </td> 
+                
+                            <td class="depo"> 
+                                    <img src="img/sobre_img/@EitherNathan.jpg" alt="Avatar">
+                                    <p><span  id="depoNeitherNathan">@NeitherNathan</span></p>  
+                                    <p class="pProjects">Abraxas e Kardiossomatic</p>
+                                    <p class="pText">"Pontifire rainha. Steam nadinha"</p>
+                            </td> 
+    
+                            <td class="depo"> 
+                                    <img src="img/sobre_img/@MahouTangerino.jpg" alt="Avatar">
+                                    <p><span  id="depoMahouTangerino">@MahouTangerino</span></p>  
+                                    <p class="pProjects">Alteria - Finalista em "Melhor Jogo de Estudantes - SBGames 2020 e Hyperspace Throw Patrol</p>
+                                    <p class="pText">"ヽ(ﾟ∀ﾟ)ﾉ━( ﾟ∀)ﾉ━(　ﾟ)ﾉ━ヽ(　)ﾉ━ヽ(ﾟ　　)━ヽ(∀ﾟ )ﾉ━ヽ(ﾟ∀ﾟ)ﾉ"</p>
+                            </td> 
+                        </tr>
+                    </tbody>
+                </table>
+    
+        </div>
+    
+    
+        <div class="info">
+    
+                <table class="blueTable">
+                    <thead>
+                        <tr>
+                            <th colspan="2">   <p class="texto2"> Informações para contato</p></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <p class="texto3">E-mail:</p></td>
+                            <td><p class="texto3">contato@pont.com.br</p></td>
+    
+                        </tr>
+                        <tr>
+                            <td> <p class="texto3">Telefone: </p></td>
+                            <td><p class="texto3">+55 41 4002-8922</p></td>
+                        </tr>
+                        <tr>
+                            <td> <p class="texto3">Whats-app: </p></td>
+                            <td><p class="texto3">+55 41 9955-7421</p></td>
+                        </tr>
+                        <tr>
+                            <td> <p class="texto3">Endereço:</p></td>
+                            <td><p class="texto3">Rua Imaculada da conceição - 999</p></td>
+                        </tr>
+                    </tbody>
+                    </tr>
+                </table>
+    
+                <div class="tituloVideo">
+                    <p class="texto2" >Veja nossa localização no mapa abaixo:</p>
+                </div>
+    
+                <div id="map">
+    
+                </div>
+    
+        </div>
+    </div>
 
 
 </body>

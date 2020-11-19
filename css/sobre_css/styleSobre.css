@@ -44,14 +44,15 @@ div.Rodape {
 div.depoimentos {
     /* border: 2px solid #F7F76A;
     background-color: gray; */
-    position: absolute;
+    position: relative ;
     /* margin: 0 auto; */
     padding: 16px;
     margin: 16px 0;
 
     width: 90%;
     height: 32%;
-    bottom: 62%;
+    /* bottom: 50%; */
+    bottom: 320px;
     left: 5%;
 }
 
@@ -170,7 +171,7 @@ div.info {
     background-color: #292929;
     position: absolute;
     width: 100%;
-    bottom: 11%;
+    bottom: 25%;
 }
 
 div.mapa {
@@ -178,8 +179,8 @@ div.mapa {
     position: absolute;
     left: 48%;
     width: 50%;
-    height: 65%;
-    bottom: 17%;
+    height: 85%;
+    bottom: 25%;
 }
 
 

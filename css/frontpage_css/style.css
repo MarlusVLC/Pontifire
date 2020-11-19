@@ -118,6 +118,7 @@ body{
 }
 
 .aGames{
+    cursor: pointer;
     width: 10%;
     margin-top: 0%;
     /* background-color: green; */
@@ -125,6 +126,7 @@ body{
 
 .aAboutUs{
     /* background-color: hotpink; */
+    cursor: pointer;
     width:30%;
     margin-top: 0%;
     margin-bottom: 0px;
@@ -279,4 +281,26 @@ body{
 ::selection{
     background: #AB1616;
     color: #000;
+}
+
+
+#tituloVideo{
+    position: relative;
+    margin-top: 1000px;
+    /* margin: auto; */
+    margin-left: 40%;
+}
+
+.tableVideo{
+    position: relative;
+    /* margin-top:50%; */
+}
+
+
+
+.divSobreNos{
+    position: relative;
+    /* position: fixed; */
+    /* bottom: 0%; */
+    top: 500px;
 }

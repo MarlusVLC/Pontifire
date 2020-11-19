@@ -23,6 +23,7 @@ var mapa;
 
 function initMap() {
 
+  // alert("OK");
   var configuracoes = {
     center: {lat: -25.45212754, lng: -49.25276682},
     zoom: 15
