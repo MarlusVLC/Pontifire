@@ -152,6 +152,7 @@ function fazerLogof(){
     var validaLogin = JSON.parse(validaLoginStorage.getItem("userLogado") || '[]');
     $(".logof").click(function(){
         localStorage.removeItem("userLogado");
+        localStorage.removeItem("dadosCarrinho");
         window.location.href = "../paginas/catalogo1.html";
         
     });
@@ -203,6 +204,12 @@ function mostrarLogado(){
 
         ($(".tableIcon")).append(conteudo);
     }
+
+
+
+
+    
+
 }
 
 

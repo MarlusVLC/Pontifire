@@ -108,9 +108,36 @@ function finalizarCOmpra(){
     );
 
     $("#BFinalizarCompra").click(function(){
-        alert("Pedido Realizado com Sucesso!!!");
+        Storage = window.localStorage;
+        var dadosDoStorage = JSON.parse(Storage.getItem('dados'));
+        
+
+        // var arrayCarrinho = JSON.parse(bancoDadosCarrinho.getItem("dadosCarrinho") || '[]');
+        var validaLogin = JSON.parse(validaLoginStorage.getItem("userLogado") || '[]');
+
+        userCadastrado = false;
+
+        if(dadosDoStorage != undefined){
+            for (var i = 0; i < dadosDoStorage.length; i++){
+                for (var j = 0; j < validaLogin.length; j++){
+                    if(validaLogin[j][0] == dadosDoStorage[i][1]){
+                        userCadastrado = false;
+                    }else{
+                        userCadastrado = true;
+                        }
+                        console.log("login " + validaLogin[0]);
+                        console.log("cadastro " + dadosDoStorage[i][1]);                    
+            }}
+
+        if (userCadastrado){
+            alert("Pedido Realizado com Sucesso!!!");
+        } else {
+            alert("Cadastre-se, por favor :)");
+
+        }
     }
-        );
+    })
+
 }
 
 function excluirCarrinho(){
