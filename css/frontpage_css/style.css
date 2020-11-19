@@ -8,6 +8,12 @@ body{
     margin: 0;
 }
 
+.divTeto{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
 .tableCabecalho{
     height: 8%;
     width: 100%; 
@@ -186,6 +192,7 @@ body{
 
 .mainbody{
     /* background-color: lightcoral; */
+    margin-top: 200px;
     height: 95%;
     width: 100%;
     align-content: center;
@@ -302,5 +309,5 @@ body{
     position: relative;
     /* position: fixed; */
     /* bottom: 0%; */
-    top: 500px;
+    top: 450px;
 }

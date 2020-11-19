@@ -172,6 +172,7 @@ div.info {
     position: absolute;
     width: 100%;
     bottom: 25%;
+    height: 300px;
 }
 
 div.mapa {
