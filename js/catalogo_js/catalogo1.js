@@ -17,17 +17,22 @@ var arrayJogos=[['DayZ Steam Key GLOBAL','img4.jpg',75.01,'Quem pode ser confiá
 
 var arrayCarrinho = [];
 var bancoDadosCarrinho = window.localStorage;
+var validaLoginStorage = window.localStorage;
+
 
 $(document).ready(function(){
     
     listaJogos($(".divJogos"), arrayJogos, "botaoRodapeProdutos");
-    listaJogos($(".divMaisVendidos"), arrayJogosPopulares, "botaoRodape");  
-    
+    // listaJogos($(".divMaisVendidos"), arrayJogosPopulares, "botaoRodape");  
+    mostrarLogado();
 
-    $("#bListarCarrinho").click(function(){
-        
-        window.location.href = "../paginas/carrinho.html";
+    fazerLogof()
+
+    
+    $("#logof").click(function(){
+        window.location.reload();
     });
+
     
 
     
@@ -71,8 +76,12 @@ function listaJogos(idJogos, lista, bComprar){
 
     $("." + bComprar).click(function(){
         
+        Storage = window.localStorage;
+        var dadosDoStorage = JSON.parse(Storage.getItem('dados'));
+        
 
         var arrayCarrinho = JSON.parse(bancoDadosCarrinho.getItem("dadosCarrinho") || '[]');
+        var validaLogin = JSON.parse(validaLoginStorage.getItem("userLogado") || '[]');
 
         var id = $(this).attr("addCarrinho");
         lista[id].splice(4, 1, true);
@@ -80,34 +89,116 @@ function listaJogos(idJogos, lista, bComprar){
 
         var produto = false;
         
-        if (arrayCarrinho.length < 1){
-            arrayCarrinho.push(lista[id]);
-            bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
-            listaJogos($(idJogos), lista, bComprar);
-        } else{
+        var emailLogin = String($("#valor1").val());
+        console.log(emailLogin);
+        
 
-            for (var i = 0; i < arrayCarrinho.length; i++){
-                
-                    
-                if (arrayCarrinho[i][0] == lista[id][0]){
-                    produto = false;
-                    alert("Produto Ja add ao carrinho")
-                    break
-                }else{
-                    produto = true
-                }
+        userCadastrado = false;
+
+        if(dadosDoStorage != undefined){
+            for (var i = 0; i < dadosDoStorage.length; i++){
+                for (var j = 0; j < validaLogin.length; j++){
+                    if(validaLogin[j][0] == dadosDoStorage[i][1]){
+                        userCadastrado = false;
+                    }else{
+                        userCadastrado = true;
+                        }
+                        console.log("login " + validaLogin[0]);
+                        console.log("cadastro " + dadosDoStorage[i][1]);                    
             }}
-        
-        if (produto == true){
-            arrayCarrinho.push(lista[id]);
-            bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
-            listaJogos($(idJogos), lista, bComprar);
-        
+            
+
         }
+
+        if (userCadastrado == true){
+            if (arrayCarrinho.length < 1){
+                arrayCarrinho.push(lista[id]);
+                bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
+                listaJogos($(idJogos), lista, bComprar);
+            } else{
+
+                for (var i = 0; i < arrayCarrinho.length; i++){
+                    
+                        
+                    if (arrayCarrinho[i][0] == lista[id][0]){
+                        produto = false;
+                        alert("Produto Ja add ao carrinho")
+                        break
+                    }else{
+                        produto = true
+                    }
+                }}
+            
+            if (produto == true){
+                arrayCarrinho.push(lista[id]);
+                bancoDadosCarrinho.setItem("dadosCarrinho",JSON.stringify(arrayCarrinho));
+                listaJogos($(idJogos), lista, bComprar);
+            
+            }
+        }else{
+            alert("Por favor, Cadastre-se")
+        }
+    
 
     });
 
 }
 
+function fazerLogof(){
+
+    var validaLogin = JSON.parse(validaLoginStorage.getItem("userLogado") || '[]');
+    $(".logof").click(function(){
+        localStorage.removeItem("userLogado");
+        window.location.href = "../paginas/catalogo1.html";
+        
+    });
+}
+
+
+function mostrarLogado(){
+
+    var validaLogin = JSON.parse(validaLoginStorage.getItem("userLogado") || '[]');
+    if (validaLogin [0] != undefined){
+
+        var login = String(validaLogin[0]);
+        teste2 = login.split("@");
+        login = teste2[0];
+        
+        
+        
+        
+        var conteudo = ""
+
+       
+        conteudo += '<tr>';
+       
+        conteudo += '<td style="width:120px" ><p class="formul3" id="nomeLogin">  ' +login + ' </p></td>';
+
+        if (window.location.pathname.includes("index.html")){
+            conteudo += '<td>  <img  id="logof" class="logof" src="img/sair1.png" width="35" height="35"></td>';
+        } 
+        else{
+            conteudo += '<td>  <img  id="logof" class="logof" src="../img/sair1.png" width="35" height="35"></td>';
+        }
+        conteudo += '</tr>';
+       
+
+
+        ($(".tableIcon")).append(conteudo);
+
+    }else{
+        
+        
+        var conteudo = ""
+
+       
+        conteudo += '<tr>';
+        conteudo += '</tr>';
+       
+
+
+        ($(".tableIcon")).append(conteudo);
+    }
+}
 
 

@@ -20,9 +20,14 @@ var bancoDadosCarrinho = window.localStorage;
 var validaLoginStorage = window.localStorage;
 
 $(document).ready(function(){
+    if (window.location.pathname.includes("index.html")){
+        listaJogos($(".divMaisVendidos"), arrayJogosPopulares, "botaoRodape");  
+    }
+    else{
+        listaJogos($(".divJogos"), arrayJogos, "botaoRodapeProdutos");
+
+    }
     
-    listaJogos($(".divJogos"), arrayJogos, "botaoRodapeProdutos");
-    listaJogos($(".divMaisVendidos"), arrayJogosPopulares, "botaoRodape");  
     mostrarLogado();
 
     

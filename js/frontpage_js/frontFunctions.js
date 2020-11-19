@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    mensagem = [];
+    // alert(screen.width);
     menuRedirect();
  
 
@@ -16,7 +16,10 @@ $(document).ready(function(){
 
     if (window.location.pathname.includes("index.html")){
         
-        scrollFix = -250;
+        scrollConstant = -250
+        scrollFix = scrollConstant*screen.width/1920;
+
+        // alert(scrollFix);
 
         var mensagemRec = storage.getItem("mensagem_de_transicao");
 

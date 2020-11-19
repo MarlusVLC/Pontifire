@@ -246,7 +246,7 @@ table.blueTable {
 
 table.blueTable td,
 table.blueTable th {
-    padding: 1px 2px;
+    padding: 1px 4px;
 }
 
 table.blueTable tbody td {
